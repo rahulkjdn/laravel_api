@@ -6,11 +6,13 @@ To set up the project and run migrations, follow these steps:
 1. Clone the repository to your local machine using `git clone https://github.com/rahulkjdn/laravel_api`
 2. Navigate to the project directory using `cd your-project-name`
 3. Run `composer install` to install the required dependencies
-4. Create a new database and update the `.env` file with the database credentials
-5. Update .env and set `QUEUE_CONNECTION=database`
-6. Run `php artisan migrate` to run the migrations
-7. Run `php artisan server` to start the project
-8. Run `php artisan queue:work` in new terminal to start the queue
+4. If `.env` is not generate automatically copy the content from `.env_example` and create new `.env`
+5. Run `php artisan key:generate` to generate the key
+6. Create a new database and update the `.env` file with the database credentials
+7. Update .env and set `QUEUE_CONNECTION=database`
+8. Run `php artisan migrate` to run the migrations
+9. Run `php artisan server` to start the project
+10. Run `php artisan queue:work` in new terminal to start the queue
 
 **Running the API Endpoint**
 

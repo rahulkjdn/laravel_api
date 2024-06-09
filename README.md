@@ -7,9 +7,10 @@ To set up the project and run migrations, follow these steps:
 2. Navigate to the project directory using `cd your-project-name`
 3. Run `composer install` to install the required dependencies
 4. Create a new database and update the `.env` file with the database credentials
-5. Run `php artisan migrate` to run the migrations
-6. Run `php artisan server` to start the project
-7. Run `php artisan queue:work` in new terminal to start the queue
+5. Update .env and set `QUEUE_CONNECTION=database`
+6. Run `php artisan migrate` to run the migrations
+7. Run `php artisan server` to start the project
+8. Run `php artisan queue:work` in new terminal to start the queue
 
 **Running the API Endpoint**
 
